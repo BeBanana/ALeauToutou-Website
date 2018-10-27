@@ -1,0 +1,35 @@
+:root {
+  --dark-primary-color:#0288D1;
+  --primary-color:#03A9F4;
+  --accent-color:#9E9E9E;
+}
+
+@font-face {
+	font-family: "Debonair JF";
+	src: url('fonts/design.jasonwalcott.Debonair JF.ttf');
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+h1 {
+  font-family:"Debonair JF";
+}
+
+.logo {
+  height: 50%;
+}
+
+.logo-div{
+  transform: translateY(30%);
+}
+
+.workinprogress {
+  background-color: white;
+  width:500px;
+  height:500px;
+  border-radius: 250px;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
