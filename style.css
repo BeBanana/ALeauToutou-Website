@@ -1,7 +1,8 @@
 :root {
-  --dark-primary-color:#0288D1;
-  --primary-color:#03A9F4;
-  --accent-color:#9E9E9E;
+  --dark-primary-color:#0288D1; /* dark blue */
+  --primary-color:#03A9F4; /* light blue */
+  --accent-color:#eccfd2; /* pink */
+  --background:#292c33; /* light black*/
 }
 
 @font-face {
@@ -10,11 +11,20 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--background);
 }
 
-h1 {
+/*h1 {
   font-family:"Debonair JF";
+}*/
+
+h4 {
+  color:white;
+}
+
+.headline {
+  font-size:70px;
+  color:var(--accent-color);
 }
 
 .logo {
@@ -31,5 +41,20 @@ h1 {
   height:500px;
   border-radius: 250px;
   margin-top: 50vh;
+  transform: translateY(-50%);
+}
+
+.phone_button {
+  background-color:var(--primary-color);
+  color:black;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
