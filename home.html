@@ -9,8 +9,11 @@
     <title>A l'eau toutou</title>
   </head>
   <body>
+
+
+<!-- HEADER -->
     <div class="w3-display-container size-site-name-container" style="background-color:#292c33; color:white; position: fixed; top:0px; left:0px; z-index:1000">
-      <div class="w3-display-container" style="display: inline-block; background-color:white; width: 54px; height: 54px; border-bottom-right-radius: 20px;">
+      <div class="w3-display-container" style="padding-left: 5px; padding-right: 5px; display: inline-block; background-color:white; width: 64px; height: 54px; border-bottom-right-radius: 20px;">
         <img class="w3-display-middle" style="width:54px; lenght:54px; border-bottom-right-radius: 20px" src="resources/logo.jpg" alt=""/>
       </div>
 
@@ -18,12 +21,12 @@
     </div>
     <div class="w3-top">
       <div class="w3-bar w3-padding menu">
-        <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
           <a href="#about" class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge">Accueil</a>
-          <a href="#menu" class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge">Tarifs et Prestations</a>
+          <a href="#pricing" class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge">Tarifs et Prestations</a>
           <a href="#contact" class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge">Contact</a>
-          <button class="w3-button phone_button w3-hover-white w3-round-xxlarge">0766394013</button>
+          <a class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-hide-small">07.66.39.40.13</a>
+          <a href="tel:+33766394013" class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-hide-large w3-hide-medium">07.66.39.40.13</a>
         </div>
       </div>
     </div>
@@ -31,29 +34,34 @@
 
     </header>
 
-   <div class="w3-row" style="padding:100px" id="about">
 
-     <div class="w3-container w3-half">
-        <div>
-          <h1 class="headline">Le bien être de votre animal avant tout</h1>
-          <center><button class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-xlarge">0766394013</button></center>
-        </div>
-     </div>
+<!-- ABOUT -->
+     <div class="w3-row" style="padding:100px" id="about">
+       <div class="w3-container w3-half">
+          <div>
+            <h1 class="headline">Le bien être de votre animal avant tout</h1>
+            <center>
+              <a class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-xlarge w3-hide-small">07.66.39.40.13</a>
+              <a href="tel:+33766394013" class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-xlarge w3-hide-large w3-hide-medium">07.66.39.40.13</a>
+            </center>
+          </div>
+       </div>
 
-     <div class="w3-container w3-half w3-cell-middle">
-       <center>
-       <div class="w3-content w3-display-container">
-        <img class="w3-circle mySlides w3-animate-fading" style="width:100%" src="resources/golden_retriever_square.jpg">
-        <img class="w3-circle mySlides w3-animate-fading" style="width:100%" src="resources/cute_puddle_square.jpg">
-        <img class="w3-circle mySlides w3-animate-fading" style="width:100%" src="resources/corgi_puppy_square.jpg">
-        <div class="w3-center w3-display-bottommiddle" style="width:100%">
-        </div>
+       <div class="w3-container w3-half w3-cell-middle">
+         <center>
+           <div class="w3-content w3-display-container">
+            <img class="w3-circle mySlides w3-animate-fading" style="width:100%" src="resources/golden_retriever_square.jpg">
+            <img class="w3-circle mySlides w3-animate-fading" style="width:100%" src="resources/cute_puddle_square.jpg">
+            <img class="w3-circle mySlides w3-animate-fading" style="width:100%" src="resources/corgi_puppy_square.jpg">
+            <div class="w3-center w3-display-bottommiddle" style="width:100%"></div>
+          </div>
+
+        </center>
       </div>
-     </div>
-   </center>
-   </div>
+    </div>
 
-   <div class="w3-row w3-padding-64	" style="padding-right:150px; padding-left:150px; background-color:white" id="menu">
+<!-- PRICING -->
+   <div class="w3-row w3-padding-64	reduced-width" style="background-color:white" id="pricing">
      <center>
        <h1>Tarifs et Prestations</h1>
        <h1 class="headline">Pour votre toutou</h1>
@@ -213,29 +221,85 @@
 
 
 <!-- CONTACT-->
-   <div class="w3-row w3-padding-64" id="contact">
-     <center>
-       <h1 style="color:white">Contact</h1>
-       <h1 class="headline">Votre toilleteur à Jonquières</h1>
-     </center>
+   <div class="w3-row w3-padding-64 dark-section reduced-width" id="contact">
+       <center>
+         <h1 style="color:white">Contact</h1>
+         <h1 class="headline">Votre toilleteuse à Jonquières</h1>
+       </center>
+       <div class="w3-row">
+         <div class="w3-half">
+           <h3>Sur rendez-vous uniquement:</h3>
+           <span style="padding-left:20px">
+             Prenez de rendez-vous:
+             <a class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-hide-small">07.66.39.40.13</a>
+             <a href="tel:+33766394013" class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-hide-large w3-hide-medium">07.66.39.40.13</a>
+           </span>
+           <h3>Horaires:</h3>
+           <table class="w3-table" style="color:white; width:250px">
+             <tr>
+              <td>Lundi</td>
+              <td>9h</td>
+              <td>-</td>
+              <td>17h</td>
+            </tr>
+            <tr>
+             <td>Marci</td>
+             <td>9h</td>
+             <td>-</td>
+             <td>17h</td>
+           </tr>
+           <tr>
+            <td>Mercredi</td>
+            <td>9h</td>
+            <td>-</td>
+            <td>17h</td>
+          </tr>
+          <tr>
+           <td>Jeudi</td>
+           <td>9h</td>
+           <td>-</td>
+           <td>17h</td>
+         </tr>
+         <tr>
+          <td>Vendredi</td>
+          <td>9h</td>
+          <td>-</td>
+          <td>17h</td>
+        </tr>
+           </table>
+         </div>
+         <div class="w3-half" style="height:300px; " id="map"></div>
+       </div>
    </div>
 
-   <script>
-    var slideIndex = 0;
-    carousel();
+<!-- SRIPTS -->
+     <script>
+       // Initialize and add the map
+       function initMap() {
+         // The location of Uluru
+         var uluru = {lat: -25.344, lng: 131.036};
+         // The map, centered at Uluru
+         var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
+         // The marker, positioned at Uluru
+         var marker = new google.maps.Marker({position: uluru, map: map});
+       }
+     </script>
+     <script>
+      var slideIndex = 0;
+      carousel();
 
-    function carousel() {
-     var i;
-     var x = document.getElementsByClassName("mySlides");
-     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-     }
-     slideIndex++;
-     if (slideIndex > x.length) {slideIndex = 1}
-     x[slideIndex-1].style.display = "block";
-     setTimeout(carousel, 9000); // Change image every 2 seconds
-    }
-  </script>
-
+      function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides");
+       for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+       }
+       slideIndex++;
+       if (slideIndex > x.length) {slideIndex = 1}
+       x[slideIndex-1].style.display = "block";
+       setTimeout(carousel, 9000); // Change image every 2 seconds
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCYhzqA8LvtUvXvQsa5xR1fhcVvwD_Gec&callback=initMap"></script>
   </body>
 </html>

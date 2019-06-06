@@ -33,12 +33,27 @@ h4 {
 }
 
 .size-site-name-container {
-  width: 320px;
+  width: 325px;
   height: 53px;
 }
 
+.reduced-width {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.dark-section {
+  background-color:var(--background);
+  color: white;
+}
+
+.white-section {
+  background-color:white;
+  color: black;
+}
+
 .headline {
-  font-size:70px;
+  font-size:5vw;
   color:var(--accent-color);
 }
 
