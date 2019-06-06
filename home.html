@@ -231,7 +231,7 @@
          <div class="w3-half">
            <h3>Sur rendez-vous uniquement:</h3>
            <span style="padding-left:20px">
-             Prenez de rendez-vous:
+             Prenez rendez-vous:
              <a class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-hide-small">07.66.39.40.13</a>
              <a href="tel:+33766394013" class="w3-button phone_button w3-hover-white w3-round-xxlarge w3-hide-large w3-hide-medium">07.66.39.40.13</a>
            </span>
@@ -282,7 +282,7 @@
     <div class="w3-row">
       <div class="w3-half">
         <center>
-          <img class="w3-circle" style="width:250px" src="resources/una.jpg">
+          <img class="w3-circle" style="width:250px" src="resources/colette.jpeg">
           <h3 style="color:black">Colette</h3>
         </center>
       </div>
@@ -307,14 +307,12 @@
 
 <!-- SRIPTS -->
      <script>
-       // Initialize and add the map
        function initMap() {
-         // The location of Uluru
-         var uluru = {lat: -25.344, lng: 131.036};
-         // The map, centered at Uluru
-         var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
-         // The marker, positioned at Uluru
-         var marker = new google.maps.Marker({position: uluru, map: map});
+         var place = {lat: 44.115181, lng: 4.899649};
+         var map = new google.maps.Map(document.getElementById('map'), {zoom: 11, center: place});
+         var marker = new google.maps.Marker({position: place, map: map});
+         var circle = new google.maps.Circle({map: map, radius: 8000, fillColor: '#03A9F4'});
+         circle.bindTo('center', marker, 'position');
        }
      </script>
      <script>
