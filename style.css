@@ -1,7 +1,7 @@
 :root {
   --dark-primary-color:#0288D1; /* dark blue */
   --primary-color:#03A9F4; /* light blue */
-  --accent-color:#eccfd2; /* pink */
+  --accent-color:#FFBDF6; /* pink */
   --background:#292c33; /* light black*/
 }
 
@@ -14,12 +14,27 @@ body {
   background-color: var(--background);
 }
 
-/*h1 {
-  font-family:"Debonair JF";
-}*/
+.menu {
+  background-color:var(--background);
+  color: white;
+}
 
 h4 {
   color:white;
+}
+
+.site-name {
+  color:var(--primary-color);
+  text-decoration: none;
+}
+
+.site-name h2 {
+  font-family:"Debonair JF";
+}
+
+.size-site-name-container {
+  width: 320px;
+  height: 53px;
 }
 
 .headline {

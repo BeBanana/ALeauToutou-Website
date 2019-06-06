@@ -9,14 +9,15 @@
     <title>A l'eau toutou</title>
   </head>
   <body>
+    <div class="w3-display-container size-site-name-container" style="background-color:#292c33; color:white; position: fixed; top:0px; left:0px; z-index:1000">
+      <div class="w3-display-container" style="display: inline-block; background-color:white; width: 54px; height: 54px; border-bottom-right-radius: 20px;">
+        <img class="w3-display-middle" style="width:54px; lenght:54px; border-bottom-right-radius: 20px" src="resources/logo.jpg" alt=""/>
+      </div>
+
+      <a href="#home" class="w3-display-right site-name"><h2>A L'eau Toutou</h2></a>
+    </div>
     <div class="w3-top">
-      <div class="w3-bar w3-black w3-padding">
-        <span>
-          <img class="w3-circle" style="width:40px; lenght:40px" src="resources/logo.jpg" alt=""/>
-          <a href="#home" class="w3-button w3-hover-black">A L'eau Toutou</a>
-        </span>
-
-
+      <div class="w3-bar w3-padding menu">
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
           <a href="#about" class="w3-bar-item w3-button w3-hover-white w3-round-xxlarge">Accueil</a>
@@ -30,7 +31,7 @@
 
     </header>
 
-   <div class="w3-row" style="padding:150px" id="about">
+   <div class="w3-row" style="padding:100px" id="about">
 
      <div class="w3-container w3-half">
         <div>
@@ -215,26 +216,26 @@
    <div class="w3-row w3-padding-64" id="contact">
      <center>
        <h1 style="color:white">Contact</h1>
-       <h1 class="headline">Votre toilleteur à Jonquière</h1>
+       <h1 class="headline">Votre toilleteur à Jonquières</h1>
      </center>
    </div>
 
    <script>
-   var slideIndex = 0;
-carousel();
+    var slideIndex = 0;
+    carousel();
 
-function carousel() {
- var i;
- var x = document.getElementsByClassName("mySlides");
- for (i = 0; i < x.length; i++) {
-   x[i].style.display = "none";
- }
- slideIndex++;
- if (slideIndex > x.length) {slideIndex = 1}
- x[slideIndex-1].style.display = "block";
- setTimeout(carousel, 9000); // Change image every 2 seconds
-}
-    </script>
+    function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     slideIndex++;
+     if (slideIndex > x.length) {slideIndex = 1}
+     x[slideIndex-1].style.display = "block";
+     setTimeout(carousel, 9000); // Change image every 2 seconds
+    }
+  </script>
 
   </body>
 </html>
