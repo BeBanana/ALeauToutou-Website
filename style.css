@@ -7,6 +7,7 @@
 
 @font-face {
 	font-family: "Debonair JF";
+  font-display: swap;
 	src: url('fonts/design.jasonwalcott.Debonair JF.ttf');
 }
 
