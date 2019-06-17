@@ -38,8 +38,9 @@ h4 {
 }
 
 .reduced-width {
-  padding-left: 10%;
-  padding-right: 10%;
+  max-width:1400px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .dark-section {
@@ -53,7 +54,7 @@ h4 {
 }
 
 .headline {
-  font-size:5vw;
+  font-size:4vw;
   color:var(--accent-color);
 }
 
