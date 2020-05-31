@@ -90,3 +90,13 @@ h4 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu img {
+  display: inline-block;
+  height: 400px;
+}
